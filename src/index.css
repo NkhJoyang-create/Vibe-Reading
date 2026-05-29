@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Merriweather", ui-serif, Georgia, serif;
+  
+  --max-width-reading-container-max: 680px;
+
+  --color-background: #FDFCFB;
+  --color-on-background: #1A1A1A;
+  --color-surface: #FAF9F6;
+  --color-surface-container: #F5F2ED;
+  --color-surface-container-low: #FAF9F6;
+  --color-surface-container-high: #F5F2ED;
+  --color-surface-container-highest: #E5E1D8;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-outline: #9E9E9E;
+  --color-outline-variant: #E5E1D8;
+  --color-primary: #1A1A1A;
+  --color-secondary: #D4A373;
+  --color-secondary-container: #FFE8D6;
+}
+
+/* Custom Interactive word styling */
+.interactive-word {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom fade-in animations for alignments */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scrollbar customizations */
+.insight-panel::-webkit-scrollbar {
+  width: 4px;
+}
+.insight-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.insight-panel::-webkit-scrollbar-thumb {
+  background: #c6c6cd;
+  border-radius: 4px;
+}
+

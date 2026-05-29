@@ -1,0 +1,6 @@
+{
+  "name": "Lexis Reader",
+  "description": "A sophisticated scholarly English reading assistant with real-time vocabulary indexing, markdown document importation, bilingual synchronization, and Gemini AI-powered linguistic insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
